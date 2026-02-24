@@ -1,0 +1,129 @@
+Zero-Shot Prompting
+
+You are a financial assistant that provides concise, factual summaries about stock tickers.
+Task: For a given stock ticker, return the company name, the sector/industry, and a short summary of recent stock performance.
+
+Ticker: AAPL
+
+Answer format:
+- Company Name:
+- Sector:
+- Recent Performance:
+- Notes:
+
+==================================================================================================================
+
+Few-Shot Prompting
+ 
+You are a financial assistant that provides concise, factual summaries about stock tickers.
+Use the following examples as a guide and keep your answers in the same format.
+
+Examples:
+
+Ticker: AAPL
+- Company Name: Apple Inc.
+- Sector: Technology (Consumer Electronics)
+- Recent Performance: Stable growth with steady demand for iPhone and strong services revenue.
+- Notes: Large-cap stock often used as a benchmark for tech performance.
+
+Ticker: TSLA
+- Company Name: Tesla, Inc.
+- Sector: Consumer Cyclical (Automotive)
+- Recent Performance: Moderate volatility with fluctuations tied to production numbers and EV market trends.
+- Notes: Strong growth potential but sensitive to interest rate changes and competition.
+
+Ticker: NVDA
+- Company Name: NVIDIA Corporation
+- Sector: Technology (Semiconductors)
+- Recent Performance: Rapid growth driven by demand for GPUs and AI hardware.
+- Notes: Considered a leading company in AI infrastructure.
+
+Now complete the following in the same format:
+Ticker: MSFT
+
+==================================================================================================================== 
+
+Chain of Thought Prompting
+
+You are a financial analyst.
+
+Question: Should an investor consider buying stock in NVIDIA (NVDA) at this time, based on recent performance trends?
+
+Let's think step by step.
+1. Identify what NVIDIA does and its main business areas.
+2. Consider the recent market and sector performance.
+3. Evaluate any recent company trends (e.g., AI demand, GPU sales, earnings growth).
+4. Consider potential risks or volatility.
+5. Then, summarize with a concise investment view.
+
+============================================================================================================ 
+
+Self-Consistency Prompting
+
+Should an investor consider buying Tesla (TSLA) stock at this time, given recent company performance, market trends, and industry risks?
+
+Generate 3 independent reasoning paths. Each path should:
+1. Analyze Tesla's business fundamentals.
+2. Consider recent market trends and news.
+3. Discuss potential risks and opportunities.
+4. Conclude with a short investment recommendation.
+
+=================================================================================================================
+
+ReAct (Reason + Act) example
+
+You are a financial assistant that can reason and take actions. 
+
+Question:
+Check the recent stock price trend for Apple (AAPL) and provide a brief summary.
+
+Use the following format:
+- Reason: Think through how to analyze the stock.
+- Action: Specify what you would do (e.g., fetch data from an API).
+- Observation: Report the result of the action.
+- Reasoning: Analyze the observation.
+- Answer: Give the final summary.
+
+=====================================================================================================================
+
+Prompt Chaining example
+
+Step 1 – Financial Summary:
+You are a financial analyst.
+Task: Summarize Tesla's (TSLA) most recent quarterly earnings and overall financial performance in 3-4 concise sentences. Output only the summary.
+
+Step 2 – Market Trend Analysis:
+
+You are a financial analyst.
+Task: Analyze Tesla's market trends based on the financial summary. Consider EV sector growth, competitor activity, and potential risks. Output a concise market trend analysis.
+Financial Summary:
+"Tesla reported strong quarterly earnings with revenue of $25.3B, up 20% YoY. Profit margins improved due to higher vehicle deliveries and energy product growth. Cash flow remains strong, supporting continued expansion. Overall, Tesla’s financial fundamentals are solid."
+
+Step 3 – Investment Recommendation:
+
+You are a financial analyst.
+Task: Based on the financial summary and market trend analysis, provide a short investment recommendation for Tesla stock. Include a brief rationale.
+Financial Summary:
+"Tesla reported strong quarterly earnings with revenue of $25.3B, up 20% YoY. Profit margins improved due to higher vehicle deliveries and energy product growth. Cash flow remains strong, supporting continued expansion. Overall, Tesla’s financial fundamentals are solid."
+Market Trend Analysis: "Tesla benefits from rapid EV sector growth and increasing global demand for electric vehicles. Competitors are expanding, but Tesla maintains a technology and brand advantage. Risks include regulatory changes, production bottlenecks, and high stock valuation."
+
+===============================================================================================================================================================================
+
+APO example
+
+You are a financial analyst assistant. 
+
+Task: Generate a concise, clear, and investor-relevant summary of Tesla's (TSLA) most recent quarterly earnings. Include revenue, profit margins, cash flow, growth trends, and key insights for investors.
+
+I want you to suggest **3 alternative ways to phrase this prompt** that could potentially improve the quality of the summary. Then, for each suggested prompt, generate the corresponding summary. Finally, recommend which prompt is the most effective and why.
+
+
+ 
+
+ 
+
+
+
+
+
+
