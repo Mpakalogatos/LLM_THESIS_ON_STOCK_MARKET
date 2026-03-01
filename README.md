@@ -1,10 +1,10 @@
 # LLM_THESIS_ON_STOCK_MARKET
 
-📖 ABSTRACT
+# 📖 ABSTRACT
 
 This thesis examines the role of modern artificial intelligence technologies in financial analysis, combining machine learning methods with Large Language Models (LLMs) for data and text processing. Through the development of applications and experimental models, it demonstrates how prediction, summarization, sentiment analysis, and automated content generation technologies can support the understanding and evaluation of financial information. The results highlight both the capabilities and the limitations of these technologies, confirming that they can function complementarily with traditional analytical tools and enhance decision-making in complex environments.
 
-🔧 APPS CREATED FOR THIS PROJECT
+# 🔧 APPS CREATED FOR THIS PROJECT
 
 1) Retrieve Historical Stock Market Data \ yfinance, finvizfinance, stramlit
 
@@ -20,7 +20,7 @@ This thesis examines the role of modern artificial intelligence technologies in 
 
 7) Red Flagging for Risk Management \ streamlit, Llama3
 
-🛠️ TOOLS USED FOR THE APPS
+# 🛠️ TOOLS USED FOR THE APPS
 
 1) yfinance: Stock Data Recovery
 
